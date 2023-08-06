@@ -1,0 +1,93 @@
+.peoplename{
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-top: -20px;
+}
+.peoplebiography{
+    margin-bottom: 0;
+    padding-bottom: 22px;
+    line-height: 22px;
+    position: relative;
+    font-size: 1rem;
+    margin-left: 286px;
+    margin-top: -220px;
+}
+
+.bio{
+    font-size: 2rem;
+    position: absolute;
+    margin-top: -50px;
+}
+/* .bg_people{
+    height: 600px;
+} */
+
+.peopleimg:hover{
+    box-shadow: 1 1 1 1 rgba(1, 1, 1, .2);
+    
+}
+
+.center{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    min-height: 100vh;
+}
+
+.ring{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: ring 2s linear infinite;
+}
+ @keyframes ring{
+    0%{
+        transform: rotate(0deg);
+        box-shadow: 1px 5px 2px #e65c00;
+    } 
+      /* 50%{
+        transform: rotate(180deg);
+        box-shadow: 1px 5px 2px #18b201;
+    }  */
+    /* 100%{
+        transform: rotate(360deg);
+        box-shadow: 1px 5px 2px #0456c8;
+    }   */
+}
+.ring::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow:0 0 5px rgba(255, 255, 255, .3);
+}
+.loading{
+    color: #737373;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing:1px;
+    line-height: 200px;
+    animation: text  3s ease-in-out linear infinite;
+}
+@keyframes text {
+    50%{
+        color: black;
+    }
+}
+.peopleimg{
+    width: 300px;
+}
+.biooo{
+    font-size: 14px;
+    margin-left: 72px;
+}   
+.bio{
+    margin-left: 72px;
+    margin-top: -150px;
+}

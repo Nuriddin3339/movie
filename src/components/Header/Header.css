@@ -1,0 +1,104 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li{
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+li::before,
+li::after{
+    content: "";
+    position: absolute;
+    background-color: #f1410b;
+    height: 3px;
+    width:0;
+    bottom: -10px;
+    transition: 0.7s;
+}
+li::after{
+    left: 0;
+    bottom: -10px;
+}
+li::before{
+    right: 0;
+    top: -10px;
+}
+li:hover{
+    color: white;
+}
+li:hover::after,
+li:hover::before{
+    width: 100%;
+}
+
+
+
+
+
+.container a.movieafter{
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+.container a.movieafter::before,
+.container a.movieafter:after{
+    content: "";
+    position: absolute;
+    background-color: #f1410b;
+    height: 3px;
+    width:0;
+    bottom: -10px;
+    transition: 0.7s;
+}
+.container a.movieafter:after{
+    left: 0;
+    bottom: -10px;
+}
+.container a.movieafter:before{
+    right: 0;
+    top: -10px;
+}
+.container a.movieafter:hover{
+    color: white;
+}
+.container a.movieafter:hover::after,
+.container a.movieafter:hover::before{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
