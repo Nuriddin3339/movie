@@ -57,7 +57,7 @@ const singleMovie = () => {
         </div>
         <div className="text-white font-bold">
         <h1 className="text-3xl font-bold text-white">Overview</h1>
-          <h1>{state.data.overview}</h1>
+          <h1 className="w-[800px]">{state.data.overview}</h1>
         </div>
       </div>
     </div>
